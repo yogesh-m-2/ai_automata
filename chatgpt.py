@@ -48,3 +48,50 @@ class Chat:
         # self.driver.quit()
         return(results)
 
+    def prompt(self, query):
+        self.driver.get("https://www.chatgpt.com")
+        input_element = WebDriverWait(self.driver, 20).until(
+            EC.visibility_of_element_located((By.XPATH, "//p[@data-placeholder='Ask anything']"))
+        )
+        input_element.send_keys(query)
+        sleep(1)
+        input_element.send_keys(Keys.ENTER)
+        sleep(1)
+        WebDriverWait(self.driver, 2000).until(
+            EC.invisibility_of_element_located((By.ID, "composer-submit-button"))
+        )
+        inputElements = WebDriverWait(self.driver, 20).until(
+            EC.visibility_of_all_elements_located((By.XPATH, "//div[@class='whitespace-pre-wrap' and normalize-space(.)='" + query + "']/following::p[@data-start]"))
+        )
+        results = []
+        for element in inputElements:
+            results.append(element.text)
+        # self.driver.quit()
+        return(results)
+
+    def generate_image(self,query):
+        self.driver.get("https://www.chatgpt.com")
+        input_element = WebDriverWait(self.driver, 20).until(
+            EC.visibility_of_element_located((By.XPATH, "//p[@data-placeholder='Ask anything']"))
+        )
+        input_element.send_keys(query)
+        sleep(1)
+        input_element.send_keys(Keys.ENTER)
+        sleep(1)
+        WebDriverWait(self.driver, 2000).until(
+            EC.invisibility_of_element_located((By.ID, "composer-submit-button"))
+        )
+        inputElements = WebDriverWait(self.driver, 20).until(
+            EC.presence_of_element_located((By.XPATH,
+                                                   "//div[@class='whitespace-pre-wrap' and normalize-space(.)='" + query + "']/following::img[@class='absolute top-0 z-1 w-full']"))
+        )
+
+        src_value = inputElements.get_attribute("src")
+
+        # results = []
+        # for element in inputElements:
+        #     results.append(element.text)
+        # self.driver.quit()
+        return (src_value)
+
+
