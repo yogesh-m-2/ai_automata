@@ -1,0 +1,2157 @@
+2025-07-13 10:02:51,526 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of Activists in Kalyana Karnataka seek to rename over 50 villages, replacing the Telugu suffix 'Palli' with Kannada 'Halli' to assert linguistic identity. Some caution that development should take priority over renaming.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of Activists in Kalyana Karnataka seek to rename over 50 villages, replacing the Telugu suffix 'Palli' with Kannada 'Halli' to assert linguistic identity. Some caution that development should take priority over renaming.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7bfc2fec5+79173]
+	GetHandleVerifier [0x0x7ff7bfc2ff20+79264]
+	(No symbol) [0x0x7ff7bf9e9e5a]
+	(No symbol) [0x0x7ff7bf9f184d]
+	(No symbol) [0x0x7ff7bf9f489c]
+	(No symbol) [0x0x7ff7bf9f496f]
+	(No symbol) [0x0x7ff7bfa3fe37]
+	(No symbol) [0x0x7ff7bfa4083c]
+	(No symbol) [0x0x7ff7bfa94247]
+	(No symbol) [0x0x7ff7bfa689af]
+	(No symbol) [0x0x7ff7bfa9100d]
+	(No symbol) [0x0x7ff7bfa68743]
+	(No symbol) [0x0x7ff7bfa314c1]
+	(No symbol) [0x0x7ff7bfa32253]
+	GetHandleVerifier [0x0x7ff7bfefa2fd+3004797]
+	GetHandleVerifier [0x0x7ff7bfef474d+2981325]
+	GetHandleVerifier [0x0x7ff7bff133a0+3107360]
+	GetHandleVerifier [0x0x7ff7bfc4aa4e+188622]
+	GetHandleVerifier [0x0x7ff7bfc522df+219487]
+	GetHandleVerifier [0x0x7ff7bfc38e14+115860]
+	GetHandleVerifier [0x0x7ff7bfc38fc9+116297]
+	GetHandleVerifier [0x0x7ff7bfc1f578+11256]
+	BaseThreadInitThunk [0x0x7ff90996257d+29]
+	RtlUserThreadStart [0x0x7ff90ad2af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of Activists in Kalyana Karnataka seek to rename over 50 villages, replacing the Telugu suffix 'Palli' with Kannada 'Halli' to assert linguistic identity. Some caution that development should take priority over renaming.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of Activists in Kalyana Karnataka seek to rename over 50 villages, replacing the Telugu suffix 'Palli' with Kannada 'Halli' to assert linguistic identity. Some caution that development should take priority over renaming.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7bfc2fec5+79173]
+	GetHandleVerifier [0x0x7ff7bfc2ff20+79264]
+	(No symbol) [0x0x7ff7bf9e9e5a]
+	(No symbol) [0x0x7ff7bf9f184d]
+	(No symbol) [0x0x7ff7bf9f489c]
+	(No symbol) [0x0x7ff7bf9f496f]
+	(No symbol) [0x0x7ff7bfa3fe37]
+	(No symbol) [0x0x7ff7bfa4083c]
+	(No symbol) [0x0x7ff7bfa94247]
+	(No symbol) [0x0x7ff7bfa689af]
+	(No symbol) [0x0x7ff7bfa9100d]
+	(No symbol) [0x0x7ff7bfa68743]
+	(No symbol) [0x0x7ff7bfa314c1]
+	(No symbol) [0x0x7ff7bfa32253]
+	GetHandleVerifier [0x0x7ff7bfefa2fd+3004797]
+	GetHandleVerifier [0x0x7ff7bfef474d+2981325]
+	GetHandleVerifier [0x0x7ff7bff133a0+3107360]
+	GetHandleVerifier [0x0x7ff7bfc4aa4e+188622]
+	GetHandleVerifier [0x0x7ff7bfc522df+219487]
+	GetHandleVerifier [0x0x7ff7bfc38e14+115860]
+	GetHandleVerifier [0x0x7ff7bfc38fc9+116297]
+	GetHandleVerifier [0x0x7ff7bfc1f578+11256]
+	BaseThreadInitThunk [0x0x7ff90996257d+29]
+	RtlUserThreadStart [0x0x7ff90ad2af08+40]
+
+2025-07-13 13:17:50,016 - ERROR - HTTPConnectionPool(host='localhost', port=52459): Max retries exceeded with url: /session/f5f01604dfb1c6cc1722e708a48fd142/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E2C5A73E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 445, in request
+    self.endheaders()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1326, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1085, in _send_output
+    self.send(msg)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1029, in send
+    self.connect()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 276, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000023E2C5A73E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 115, in generate_image
+    self.driver.get("https://www.chatgpt.com")
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 5473, in <lambda>
+    driver.get = lambda url: uc_special_open_if_cf(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 420, in uc_special_open_if_cf
+    driver.execute_script('window.open("%s","_blank");' % url)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 544, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 445, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=52459): Max retries exceeded with url: /session/f5f01604dfb1c6cc1722e708a48fd142/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E2C5A73E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-13 13:19:48,441 - ERROR - HTTPConnectionPool(host='localhost', port=52459): Max retries exceeded with url: /session/f5f01604dfb1c6cc1722e708a48fd142/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E2B119250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 445, in request
+    self.endheaders()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1326, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1085, in _send_output
+    self.send(msg)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1029, in send
+    self.connect()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 276, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000023E2B119250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 115, in generate_image
+    self.driver.get("https://www.chatgpt.com")
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 5473, in <lambda>
+    driver.get = lambda url: uc_special_open_if_cf(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 420, in uc_special_open_if_cf
+    driver.execute_script('window.open("%s","_blank");' % url)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 544, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 445, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=52459): Max retries exceeded with url: /session/f5f01604dfb1c6cc1722e708a48fd142/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E2B119250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-13 13:21:46,282 - ERROR - HTTPConnectionPool(host='localhost', port=52459): Max retries exceeded with url: /session/f5f01604dfb1c6cc1722e708a48fd142/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E2C5C92E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 445, in request
+    self.endheaders()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1326, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1085, in _send_output
+    self.send(msg)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1029, in send
+    self.connect()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 276, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000023E2C5C92E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 115, in generate_image
+    self.driver.get("https://www.chatgpt.com")
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 5473, in <lambda>
+    driver.get = lambda url: uc_special_open_if_cf(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 420, in uc_special_open_if_cf
+    driver.execute_script('window.open("%s","_blank");' % url)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 544, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 445, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=52459): Max retries exceeded with url: /session/f5f01604dfb1c6cc1722e708a48fd142/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E2C5C92E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-13 20:30:20,306 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38b2191]
+	(No symbol) [0x0x7ff7d395f83e]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 120, in generate_image
+    input_element.send_keys(Keys.ENTER)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 305, in send_keys
+    self._execute(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 574, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38b2191]
+	(No symbol) [0x0x7ff7d395f83e]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 20:34:07,505 - ERROR - list index out of range
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 47, in <module>
+    caption = news["description"]+extract_hashtags(news["description"],news["hashtag_word"])+"#karnataka #karnatakatourism #bengaluru #bengaluru #bengalurudiaries #bengaluruadda"
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\hashtag_extractor\__init__.py", line 26, in extract_hashtags
+    output = ' '.join(item.split('. ')[1] for item in raw_hashtags['results'])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\hashtag_extractor\__init__.py", line 26, in <genexpr>
+    output = ' '.join(item.split('. ')[1] for item in raw_hashtags['results'])
+                      ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-07-13 20:34:26,646 - ERROR - Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38c5f15]
+	(No symbol) [0x0x7ff7d38eabf4]
+	(No symbol) [0x0x7ff7d395fa85]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 122, in generate_image
+    WebDriverWait(self.driver, 2000).until(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 554, in _predicate
+    target = driver.find_element(*target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38c5f15]
+	(No symbol) [0x0x7ff7d38eabf4]
+	(No symbol) [0x0x7ff7d395fa85]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 20:38:35,349 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of A tragic accident near Ramanagara's Jayapura Gate on July 13 morning killed three on the spot and injured one. The incident raises concern over road safety despite stricter controls.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of A tragic accident near Ramanagara's Jayapura Gate on July 13 morning killed three on the spot and injured one. The incident raises concern over road safety despite stricter controls.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of A tragic accident near Ramanagara's Jayapura Gate on July 13 morning killed three on the spot and injured one. The incident raises concern over road safety despite stricter controls.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of A tragic accident near Ramanagara's Jayapura Gate on July 13 morning killed three on the spot and injured one. The incident raises concern over road safety despite stricter controls.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment.']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 20:53:08,223 - ERROR - HTTPConnectionPool(host='localhost', port=52271): Max retries exceeded with url: /session/d786a85bf05e8d7341c82e458b5ba64a/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C467E08380>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 445, in request
+    self.endheaders()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1326, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1085, in _send_output
+    self.send(msg)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1029, in send
+    self.connect()
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 276, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002C467E08380>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment. Include large, centered, clearly legible, non-smudged text in a clean sans-serif font (e.g., Helvetica or Arial). The text should be sharp, with high contrast against the background, and perfectly readable.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 114, in generate_image
+    self.driver.get("https://www.chatgpt.com")
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 5473, in <lambda>
+    driver.get = lambda url: uc_special_open_if_cf(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 420, in uc_special_open_if_cf
+    driver.execute_script('window.open("%s","_blank");' % url)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 544, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 445, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=52271): Max retries exceeded with url: /session/d786a85bf05e8d7341c82e458b5ba64a/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C467E08380>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-13 21:09:13,836 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:09:13,840 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:09:13,841 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:09:13,842 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:09:13,843 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:09:13,843 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:09:13,844 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,668 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,671 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,673 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,674 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,675 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,677 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,678 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,678 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:10:31,679 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:11:41,718 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:11:41,723 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:11:41,725 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:11:41,727 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:11:41,729 - ERROR - bad operand type for unary +: 'str'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image(+news["description"]+"""Create an Instagram-worthy image on this description. please keep the text sharp and readable""")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: bad operand type for unary +: 'str'
+2025-07-13 21:14:45,632 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of In over 50 villages across Kalaburagi, Raichur, Yadgir and Bidar, locals led by the Kalyana Karnataka Horata Samiti are advocating to change the Telugu suffix 'Palli' to Kannada 'Halli' to better reflect linguistic heritage. While some view it as cultural assertion, others say development should take priority.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment. Include large, centered, clearly legible, non-smudged text in a clean sans-serif font (e.g., Helvetica or Arial). The text should be sharp, with high contrast against the background, and perfectly readable.']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of In over 50 villages across Kalaburagi, Raichur, Yadgir and Bidar, locals led by the Kalyana Karnataka Horata Samiti are advocating to change the Telugu suffix 'Palli' to Kannada 'Halli' to better reflect linguistic heritage. While some view it as cultural assertion, others say development should take priority.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment. Include large, centered, clearly legible, non-smudged text in a clean sans-serif font (e.g., Helvetica or Arial). The text should be sharp, with high contrast against the background, and perfectly readable.']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    res= gpt.generate_image("""Create an Instagram-worthy image on the topic of """+news["description"]+""". 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment. Include large, centered, clearly legible, non-smudged text in a clean sans-serif font (e.g., Helvetica or Arial). The text should be sharp, with high contrast against the background, and perfectly readable.""")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of In over 50 villages across Kalaburagi, Raichur, Yadgir and Bidar, locals led by the Kalyana Karnataka Horata Samiti are advocating to change the Telugu suffix 'Palli' to Kannada 'Halli' to better reflect linguistic heritage. While some view it as cultural assertion, others say development should take priority.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment. Include large, centered, clearly legible, non-smudged text in a clean sans-serif font (e.g., Helvetica or Arial). The text should be sharp, with high contrast against the background, and perfectly readable.']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Create an Instagram-worthy image on the topic of In over 50 villages across Kalaburagi, Raichur, Yadgir and Bidar, locals led by the Kalyana Karnataka Horata Samiti are advocating to change the Telugu suffix 'Palli' to Kannada 'Halli' to better reflect linguistic heritage. While some view it as cultural assertion, others say development should take priority.. 1)Add catchy, informal, and engaging text directly on the image to hook viewers. 2)Make sure the design fits an Instagram post (square format, visually bold, stylish).3)The content and design should comply with community guidelines.4)No need to ask for approval—go ahead and generate based on your best judgment. Include large, centered, clearly legible, non-smudged text in a clean sans-serif font (e.g., Helvetica or Arial). The text should be sharp, with high contrast against the background, and perfectly readable.']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:17:55,061 - ERROR - 'NoneType' object has no attribute 'is_displayed'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    sleep(3)
+             
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 122, in generate_image
+    WebDriverWait(self.driver, 2000).until(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 555, in _predicate
+    return _element_if_visible(target, visibility=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 272, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+2025-07-13 21:19:36,227 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38b2191]
+	(No symbol) [0x0x7ff7d395f83e]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 46, in <module>
+    sleep(3)
+             
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 113, in generate_image
+    self.driver.get("https://www.chatgpt.com")
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 5473, in <lambda>
+    driver.get = lambda url: uc_special_open_if_cf(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 420, in uc_special_open_if_cf
+    driver.execute_script('window.open("%s","_blank");' % url)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 544, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38b2191]
+	(No symbol) [0x0x7ff7d395f83e]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:22:19,669 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Social activists in districts like Kalaburagi and Raichur are demanding that over 50 villages replace the Telugu suffix 'Palli' with the Kannada 'Halli' to assert cultural identity. While some support this linguistic assertion, others argue that village development should take priority over renaming efforts.create an instagram worthy image, make sure the text used inside is short, sweet and hookable, take as much as time you want to generate the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Social activists in districts like Kalaburagi and Raichur are demanding that over 50 villages replace the Telugu suffix 'Palli' with the Kannada 'Halli' to assert cultural identity. While some support this linguistic assertion, others argue that village development should take priority over renaming efforts.create an instagram worthy image, make sure the text used inside is short, sweet and hookable, take as much as time you want to generate the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+"""create an instagram worthy image, make sure the text used inside is short, sweet and hookable, take as much as time you want to generate the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Social activists in districts like Kalaburagi and Raichur are demanding that over 50 villages replace the Telugu suffix 'Palli' with the Kannada 'Halli' to assert cultural identity. While some support this linguistic assertion, others argue that village development should take priority over renaming efforts.create an instagram worthy image, make sure the text used inside is short, sweet and hookable, take as much as time you want to generate the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Social activists in districts like Kalaburagi and Raichur are demanding that over 50 villages replace the Telugu suffix 'Palli' with the Kannada 'Halli' to assert cultural identity. While some support this linguistic assertion, others argue that village development should take priority over renaming efforts.create an instagram worthy image, make sure the text used inside is short, sweet and hookable, take as much as time you want to generate the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:24:42,451 - ERROR - Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38c5f15]
+	(No symbol) [0x0x7ff7d38eabf4]
+	(No symbol) [0x0x7ff7d395fa85]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image, make sure the text used inside is short, sweet and hookable, take as much as time you want to generate the image, but make the text inside sharp and clear""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38c5f15]
+	(No symbol) [0x0x7ff7d38eabf4]
+	(No symbol) [0x0x7ff7d395fa85]
+	(No symbol) [0x0x7ff7d397ff72]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:26:13,283 - ERROR - 'NoneType' object has no attribute 'is_displayed'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image, make sure the text used inside is short, sweet and hookable, take as much as time you want to generate the image, but make the text inside sharp and clear""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 122, in generate_image
+    WebDriverWait(self.driver, 2000).until(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 555, in _predicate
+    return _element_if_visible(target, visibility=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 272, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+2025-07-13 21:30:06,141 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Launched in June\u202f2023, Karnataka’s Shakti scheme (free bus travel for women) has issued over 497\u202fcrore tickets with \u20b912,614\u202fcrore spent. With average daily usage at 73\u202flakh tickets, CM Siddaramaiah and Deputy CM Shivakumar plan a symbolic bus ride to mark the milestone. - create an instagram worthy image. also 'Shakti scheme tickets to cross \u20b9500\u2011crore mark' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Launched in June\u202f2023, Karnataka’s Shakti scheme (free bus travel for women) has issued over 497\u202fcrore tickets with \u20b912,614\u202fcrore spent. With average daily usage at 73\u202flakh tickets, CM Siddaramaiah and Deputy CM Shivakumar plan a symbolic bus ride to mark the milestone. - create an instagram worthy image. also 'Shakti scheme tickets to cross \u20b9500\u2011crore mark' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Launched in June\u202f2023, Karnataka’s Shakti scheme (free bus travel for women) has issued over 497\u202fcrore tickets with \u20b912,614\u202fcrore spent. With average daily usage at 73\u202flakh tickets, CM Siddaramaiah and Deputy CM Shivakumar plan a symbolic bus ride to mark the milestone. - create an instagram worthy image. also 'Shakti scheme tickets to cross \u20b9500\u2011crore mark' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Launched in June\u202f2023, Karnataka’s Shakti scheme (free bus travel for women) has issued over 497\u202fcrore tickets with \u20b912,614\u202fcrore spent. With average daily usage at 73\u202flakh tickets, CM Siddaramaiah and Deputy CM Shivakumar plan a symbolic bus ride to mark the milestone. - create an instagram worthy image. also 'Shakti scheme tickets to cross \u20b9500\u2011crore mark' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:30:40,242 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='BMTC has started a new religious tour circuit in Bengaluru offering one\u2011day packages covering 17 temples via two routes (Divya Darshan\u20115 and 6). Bookings open online or at BMTC counters, running daily. - create an instagram worthy image. also 'BMTC launches ‘Divya Darshan’ 1\u2011day tour package' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='BMTC has started a new religious tour circuit in Bengaluru offering one\u2011day packages covering 17 temples via two routes (Divya Darshan\u20115 and 6). Bookings open online or at BMTC counters, running daily. - create an instagram worthy image. also 'BMTC launches ‘Divya Darshan’ 1\u2011day tour package' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='BMTC has started a new religious tour circuit in Bengaluru offering one\u2011day packages covering 17 temples via two routes (Divya Darshan\u20115 and 6). Bookings open online or at BMTC counters, running daily. - create an instagram worthy image. also 'BMTC launches ‘Divya Darshan’ 1\u2011day tour package' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='BMTC has started a new religious tour circuit in Bengaluru offering one\u2011day packages covering 17 temples via two routes (Divya Darshan\u20115 and 6). Bookings open online or at BMTC counters, running daily. - create an instagram worthy image. also 'BMTC launches ‘Divya Darshan’ 1\u2011day tour package' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:31:16,652 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Devanahalli farmers proposed selling 449\u202facres near the airport to the state for a high\u2011tech park at \u20b93.5\u202fcrore per acre. CM Siddaramaiah will lead a meeting on July\u202f15 to decide on the proposal amid ongoing protests. - create an instagram worthy image. also 'Farmers offer Devanahalli land at \u20b93.5\u202fcr/acre for tech\u2011park' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Devanahalli farmers proposed selling 449\u202facres near the airport to the state for a high\u2011tech park at \u20b93.5\u202fcrore per acre. CM Siddaramaiah will lead a meeting on July\u202f15 to decide on the proposal amid ongoing protests. - create an instagram worthy image. also 'Farmers offer Devanahalli land at \u20b93.5\u202fcr/acre for tech\u2011park' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Devanahalli farmers proposed selling 449\u202facres near the airport to the state for a high\u2011tech park at \u20b93.5\u202fcrore per acre. CM Siddaramaiah will lead a meeting on July\u202f15 to decide on the proposal amid ongoing protests. - create an instagram worthy image. also 'Farmers offer Devanahalli land at \u20b93.5\u202fcr/acre for tech\u2011park' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Devanahalli farmers proposed selling 449\u202facres near the airport to the state for a high\u2011tech park at \u20b93.5\u202fcrore per acre. CM Siddaramaiah will lead a meeting on July\u202f15 to decide on the proposal amid ongoing protests. - create an instagram worthy image. also 'Farmers offer Devanahalli land at \u20b93.5\u202fcr/acre for tech\u2011park' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:31:45,913 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='A car collided with a divider near Ramanagara’s Jayapura Gate early on July\u202f13, killing three instantly and injuring another. Concerns have been raised regarding expressway safety despite recent regulations. - create an instagram worthy image. also '3 dead, 1 injured in Mysuru–Bengaluru expressway crash' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='A car collided with a divider near Ramanagara’s Jayapura Gate early on July\u202f13, killing three instantly and injuring another. Concerns have been raised regarding expressway safety despite recent regulations. - create an instagram worthy image. also '3 dead, 1 injured in Mysuru–Bengaluru expressway crash' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='A car collided with a divider near Ramanagara’s Jayapura Gate early on July\u202f13, killing three instantly and injuring another. Concerns have been raised regarding expressway safety despite recent regulations. - create an instagram worthy image. also '3 dead, 1 injured in Mysuru–Bengaluru expressway crash' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='A car collided with a divider near Ramanagara’s Jayapura Gate early on July\u202f13, killing three instantly and injuring another. Concerns have been raised regarding expressway safety despite recent regulations. - create an instagram worthy image. also '3 dead, 1 injured in Mysuru–Bengaluru expressway crash' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 21:32:19,760 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Following heavy rains, Karnataka discharged a record 74.1\u202ftmcft of surplus Cauvery water to Tamil Nadu by July\u202f9, far exceeding the SC allocation of 18.2\u202ftmcft. Reservoirs are full and further 45.9\u202ftmcft is planned for August. - create an instagram worthy image. also 'Record 74.1\u202ftmcft surplus Cauvery water released to TN' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Following heavy rains, Karnataka discharged a record 74.1\u202ftmcft of surplus Cauvery water to Tamil Nadu by July\u202f9, far exceeding the SC allocation of 18.2\u202ftmcft. Reservoirs are full and further 45.9\u202ftmcft is planned for August. - create an instagram worthy image. also 'Record 74.1\u202ftmcft surplus Cauvery water released to TN' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Following heavy rains, Karnataka discharged a record 74.1\u202ftmcft of surplus Cauvery water to Tamil Nadu by July\u202f9, far exceeding the SC allocation of 18.2\u202ftmcft. Reservoirs are full and further 45.9\u202ftmcft is planned for August. - create an instagram worthy image. also 'Record 74.1\u202ftmcft surplus Cauvery water released to TN' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Following heavy rains, Karnataka discharged a record 74.1\u202ftmcft of surplus Cauvery water to Tamil Nadu by July\u202f9, far exceeding the SC allocation of 18.2\u202ftmcft. Reservoirs are full and further 45.9\u202ftmcft is planned for August. - create an instagram worthy image. also 'Record 74.1\u202ftmcft surplus Cauvery water released to TN' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d3b26f75+76917]
+	GetHandleVerifier [0x0x7ff7d3b26fd0+77008]
+	(No symbol) [0x0x7ff7d38d9dea]
+	(No symbol) [0x0x7ff7d38e1789]
+	(No symbol) [0x0x7ff7d38e482c]
+	(No symbol) [0x0x7ff7d38e48ff]
+	(No symbol) [0x0x7ff7d392fb07]
+	(No symbol) [0x0x7ff7d393050c]
+	(No symbol) [0x0x7ff7d3983887]
+	(No symbol) [0x0x7ff7d39584af]
+	(No symbol) [0x0x7ff7d398065c]
+	(No symbol) [0x0x7ff7d3958243]
+	(No symbol) [0x0x7ff7d3921431]
+	(No symbol) [0x0x7ff7d39221c3]
+	GetHandleVerifier [0x0x7ff7d3dfd2ad+3051437]
+	GetHandleVerifier [0x0x7ff7d3df7903+3028483]
+	GetHandleVerifier [0x0x7ff7d3e1589d+3151261]
+	GetHandleVerifier [0x0x7ff7d3b4183e+185662]
+	GetHandleVerifier [0x0x7ff7d3b496ff+218111]
+	GetHandleVerifier [0x0x7ff7d3b2faf4+112628]
+	GetHandleVerifier [0x0x7ff7d3b2fca9+113065]
+	GetHandleVerifier [0x0x7ff7d3b16c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 22:11:35,253 - ERROR - 'NoneType' object has no attribute 'is_displayed'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image("""Create an image: """+news['description']+"""
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 122, in generate_image
+    WebDriverWait(self.driver, 2000).until(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 555, in _predicate
+    return _element_if_visible(target, visibility=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 272, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+2025-07-13 22:13:17,048 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c41d6f75+76917]
+	GetHandleVerifier [0x0x7ff7c41d6fd0+77008]
+	(No symbol) [0x0x7ff7c3f89dea]
+	(No symbol) [0x0x7ff7c3f62191]
+	(No symbol) [0x0x7ff7c400f83e]
+	(No symbol) [0x0x7ff7c402ff72]
+	(No symbol) [0x0x7ff7c4008243]
+	(No symbol) [0x0x7ff7c3fd1431]
+	(No symbol) [0x0x7ff7c3fd21c3]
+	GetHandleVerifier [0x0x7ff7c44ad2ad+3051437]
+	GetHandleVerifier [0x0x7ff7c44a7903+3028483]
+	GetHandleVerifier [0x0x7ff7c44c589d+3151261]
+	GetHandleVerifier [0x0x7ff7c41f183e+185662]
+	GetHandleVerifier [0x0x7ff7c41f96ff+218111]
+	GetHandleVerifier [0x0x7ff7c41dfaf4+112628]
+	GetHandleVerifier [0x0x7ff7c41dfca9+113065]
+	GetHandleVerifier [0x0x7ff7c41c6c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image("""Create an image: """+news['description']+"""
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 113, in generate_image
+    self.driver.get("https://www.chatgpt.com")
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 5473, in <lambda>
+    driver.get = lambda url: uc_special_open_if_cf(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\browser_launcher.py", line 420, in uc_special_open_if_cf
+    driver.execute_script('window.open("%s","_blank");' % url)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 544, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c41d6f75+76917]
+	GetHandleVerifier [0x0x7ff7c41d6fd0+77008]
+	(No symbol) [0x0x7ff7c3f89dea]
+	(No symbol) [0x0x7ff7c3f62191]
+	(No symbol) [0x0x7ff7c400f83e]
+	(No symbol) [0x0x7ff7c402ff72]
+	(No symbol) [0x0x7ff7c4008243]
+	(No symbol) [0x0x7ff7c3fd1431]
+	(No symbol) [0x0x7ff7c3fd21c3]
+	GetHandleVerifier [0x0x7ff7c44ad2ad+3051437]
+	GetHandleVerifier [0x0x7ff7c44a7903+3028483]
+	GetHandleVerifier [0x0x7ff7c44c589d+3151261]
+	GetHandleVerifier [0x0x7ff7c41f183e+185662]
+	GetHandleVerifier [0x0x7ff7c41f96ff+218111]
+	GetHandleVerifier [0x0x7ff7c41dfaf4+112628]
+	GetHandleVerifier [0x0x7ff7c41dfca9+113065]
+	GetHandleVerifier [0x0x7ff7c41c6c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-13 22:14:23,028 - ERROR - 'NoneType' object has no attribute 'is_displayed'
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image("""Create an image: """+news['description']+"""
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 122, in generate_image
+    WebDriverWait(self.driver, 2000).until(
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 555, in _predicate
+    return _element_if_visible(target, visibility=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 272, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+2025-07-19 16:50:46,708 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='The state government has implemented a new policy requiring all groundwater users—including individuals, housing societies, commercial entities, industries, and mining operators—to pay charges ranging from Re 1 to \u20b935 per cubic metre, depending on the volume of water extracted and the area's groundwater status. Borewell digging now mandates obtaining a no-objection certificate (NOC), and all users must install water meters to track consumption. This expansion of regulatory oversight aims to promote sustainable groundwater use and prevent over-extraction. - create an instagram worthy image. also 'Karnataka Introduces Groundwater Usage Charges and Mandatory Meters' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='The state government has implemented a new policy requiring all groundwater users—including individuals, housing societies, commercial entities, industries, and mining operators—to pay charges ranging from Re 1 to \u20b935 per cubic metre, depending on the volume of water extracted and the area's groundwater status. Borewell digging now mandates obtaining a no-objection certificate (NOC), and all users must install water meters to track consumption. This expansion of regulatory oversight aims to promote sustainable groundwater use and prevent over-extraction. - create an instagram worthy image. also 'Karnataka Introduces Groundwater Usage Charges and Mandatory Meters' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='The state government has implemented a new policy requiring all groundwater users—including individuals, housing societies, commercial entities, industries, and mining operators—to pay charges ranging from Re 1 to \u20b935 per cubic metre, depending on the volume of water extracted and the area's groundwater status. Borewell digging now mandates obtaining a no-objection certificate (NOC), and all users must install water meters to track consumption. This expansion of regulatory oversight aims to promote sustainable groundwater use and prevent over-extraction. - create an instagram worthy image. also 'Karnataka Introduces Groundwater Usage Charges and Mandatory Meters' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='The state government has implemented a new policy requiring all groundwater users—including individuals, housing societies, commercial entities, industries, and mining operators—to pay charges ranging from Re 1 to \u20b935 per cubic metre, depending on the volume of water extracted and the area's groundwater status. Borewell digging now mandates obtaining a no-objection certificate (NOC), and all users must install water meters to track consumption. This expansion of regulatory oversight aims to promote sustainable groundwater use and prevent over-extraction. - create an instagram worthy image. also 'Karnataka Introduces Groundwater Usage Charges and Mandatory Meters' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-19 16:51:21,125 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-19 16:51:54,378 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='A Bengaluru homebuyer was awarded \u20b970 lakh in compensation due to a three-year delay in project possession by a builder. The buyer had paid the full purchase amount of \u20b951 lakh for a flat near Bengaluru International Airport, based on the builder's promise, but the project was never completed and eventually lost its development license. The buyer sought justice under the Karnataka RERA (Real Estate Regulatory Authority), which ruled in his favor. - create an instagram worthy image. also 'Bengaluru Homebuyer Awarded \u20b970 Lakh for Builder's Delay' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='A Bengaluru homebuyer was awarded \u20b970 lakh in compensation due to a three-year delay in project possession by a builder. The buyer had paid the full purchase amount of \u20b951 lakh for a flat near Bengaluru International Airport, based on the builder's promise, but the project was never completed and eventually lost its development license. The buyer sought justice under the Karnataka RERA (Real Estate Regulatory Authority), which ruled in his favor. - create an instagram worthy image. also 'Bengaluru Homebuyer Awarded \u20b970 Lakh for Builder's Delay' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='A Bengaluru homebuyer was awarded \u20b970 lakh in compensation due to a three-year delay in project possession by a builder. The buyer had paid the full purchase amount of \u20b951 lakh for a flat near Bengaluru International Airport, based on the builder's promise, but the project was never completed and eventually lost its development license. The buyer sought justice under the Karnataka RERA (Real Estate Regulatory Authority), which ruled in his favor. - create an instagram worthy image. also 'Bengaluru Homebuyer Awarded \u20b970 Lakh for Builder's Delay' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='A Bengaluru homebuyer was awarded \u20b970 lakh in compensation due to a three-year delay in project possession by a builder. The buyer had paid the full purchase amount of \u20b951 lakh for a flat near Bengaluru International Airport, based on the builder's promise, but the project was never completed and eventually lost its development license. The buyer sought justice under the Karnataka RERA (Real Estate Regulatory Authority), which ruled in his favor. - create an instagram worthy image. also 'Bengaluru Homebuyer Awarded \u20b970 Lakh for Builder's Delay' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-19 16:52:29,601 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-19 16:53:08,775 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Karnataka Chief Minister Siddaramaiah responded to criticism from the BJP regarding a convention in Mysuru, clarifying that the event, scheduled for Saturday, is not a personal show of strength but aims to showcase the state government's development-oriented and pro-people initiatives. He dismissed the BJP's allegations as false propaganda and assured that the inquiry report on the Bengaluru stampede during the Royal Challengers Bengaluru (RCB) victory celebrations would be reviewed at the next cabinet meeting for further action. - create an instagram worthy image. also 'Karnataka Chief Minister Addresses BJP's Allegations on Mysuru Convention' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Karnataka Chief Minister Siddaramaiah responded to criticism from the BJP regarding a convention in Mysuru, clarifying that the event, scheduled for Saturday, is not a personal show of strength but aims to showcase the state government's development-oriented and pro-people initiatives. He dismissed the BJP's allegations as false propaganda and assured that the inquiry report on the Bengaluru stampede during the Royal Challengers Bengaluru (RCB) victory celebrations would be reviewed at the next cabinet meeting for further action. - create an instagram worthy image. also 'Karnataka Chief Minister Addresses BJP's Allegations on Mysuru Convention' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Karnataka Chief Minister Siddaramaiah responded to criticism from the BJP regarding a convention in Mysuru, clarifying that the event, scheduled for Saturday, is not a personal show of strength but aims to showcase the state government's development-oriented and pro-people initiatives. He dismissed the BJP's allegations as false propaganda and assured that the inquiry report on the Bengaluru stampede during the Royal Challengers Bengaluru (RCB) victory celebrations would be reviewed at the next cabinet meeting for further action. - create an instagram worthy image. also 'Karnataka Chief Minister Addresses BJP's Allegations on Mysuru Convention' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Karnataka Chief Minister Siddaramaiah responded to criticism from the BJP regarding a convention in Mysuru, clarifying that the event, scheduled for Saturday, is not a personal show of strength but aims to showcase the state government's development-oriented and pro-people initiatives. He dismissed the BJP's allegations as false propaganda and assured that the inquiry report on the Bengaluru stampede during the Royal Challengers Bengaluru (RCB) victory celebrations would be reviewed at the next cabinet meeting for further action. - create an instagram worthy image. also 'Karnataka Chief Minister Addresses BJP's Allegations on Mysuru Convention' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-19 16:53:43,619 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='Justice Vibhu Bakhru has been sworn in as the 35th Chief Justice of the Karnataka High Court. He previously served as a judge of the Delhi High Court and has also served as Acting Chief Justice of the Delhi High Court. His appointment was recommended by the Supreme Court collegium and appointed by President Droupadi Murmu. - create an instagram worthy image. also 'Justice Vibhu Bakhru Sworn in as Chief Justice of Karnataka High Court' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+
+2025-07-19 16:54:20,558 - ERROR - Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+Traceback (most recent call last):
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\main.py", line 50, in <module>
+    res = gpt.generate_image(news['description']+""" - create an instagram worthy image. also '"""+news['headline']+"""' - add this text in the image""")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\Documents\GitHub\ai_automata\chatgpt.py", line 126, in generate_image
+    inputElements = WebDriverWait(self.driver, 20).until(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 104, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\seleniumbase\core\sb_driver.py", line 28, in find_element
+    return self.driver.default_find_element(by=by, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\yogesh\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='whitespace-pre-wrap' and normalize-space(.)='On Friday morning in Bengaluru's Peenya area, a 25-year-old woman named G Suma Naik, a telecaller originally from Mandya, died and four others were injured after a BMTC electric bus crashed into a pavement eatery. The accident occurred when a BMTC conductor, Ramesh M, attempted to move the bus despite lacking technical expertise with electric vehicles. Ramesh, a licensed heavy vehicle driver, reportedly faced difficulty operating the bus, which suddenly accelerated and went out of control. - create an instagram worthy image. also 'BMTC Electric Bus Accident in Peenya Kills One, Injures Four' - add this text in the image']/following::img[@class='absolute top-0 z-1 w-full']' is not a valid XPath expression.
+  (Session info: chrome=138.0.7204.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff607796f75+76917]
+	GetHandleVerifier [0x0x7ff607796fd0+77008]
+	(No symbol) [0x0x7ff607549dea]
+	(No symbol) [0x0x7ff607551789]
+	(No symbol) [0x0x7ff60755482c]
+	(No symbol) [0x0x7ff6075548ff]
+	(No symbol) [0x0x7ff60759fb07]
+	(No symbol) [0x0x7ff6075a050c]
+	(No symbol) [0x0x7ff6075f3887]
+	(No symbol) [0x0x7ff6075c84af]
+	(No symbol) [0x0x7ff6075f065c]
+	(No symbol) [0x0x7ff6075c8243]
+	(No symbol) [0x0x7ff607591431]
+	(No symbol) [0x0x7ff6075921c3]
+	GetHandleVerifier [0x0x7ff607a6d2ad+3051437]
+	GetHandleVerifier [0x0x7ff607a67903+3028483]
+	GetHandleVerifier [0x0x7ff607a8589d+3151261]
+	GetHandleVerifier [0x0x7ff6077b183e+185662]
+	GetHandleVerifier [0x0x7ff6077b96ff+218111]
+	GetHandleVerifier [0x0x7ff60779faf4+112628]
+	GetHandleVerifier [0x0x7ff60779fca9+113065]
+	GetHandleVerifier [0x0x7ff607786c78+10616]
+	BaseThreadInitThunk [0x0x7ffb0b07257d+29]
+	RtlUserThreadStart [0x0x7ffb0c92af08+40]
+

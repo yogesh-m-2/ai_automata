@@ -1,2 +1,5 @@
-selenium
-seleniumbase
+selenium~=4.33.0
+seleniumbase~=4.39.3
+requests~=2.32.4
+pyperclip~=1.9.0
+configparser~=7.1.0
