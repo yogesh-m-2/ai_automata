@@ -45,7 +45,6 @@ class Chat:
 
     def prompt(self, query, copy_json=False):
         self.driver.get("https://www.chatgpt.com")
-        self.set_cookie()
         try:
             input_element = WebDriverWait(self.driver, 20).until(
                 EC.visibility_of_element_located((By.XPATH, "//p[@data-placeholder='Ask anything']"))
@@ -194,6 +193,19 @@ class Chat:
         except Exception as e:
             print(f"Alternative approach error: {e}")
             return False
+
+    def check_chrome_profile_details(self):
+        self.driver.get("chrome://version")
+
+        # Wait a bit for the page to load
+        time.sleep(1)
+
+
+        print("\n=== chrome://version info ===")
+        print(self.driver.page_source)
+        print("=============================\n")
+
+        self.driver.quit()
 
 
 
