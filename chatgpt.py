@@ -12,6 +12,7 @@ from selenium.common.exceptions import UnableToSetCookieException, ElementNotInt
 from selenium.common.exceptions import TimeoutException
 import time
 
+
 class Chat:
     def __init__(self, config_path=None,kill_chrome=False):
         self.config = configparser.ConfigParser()
