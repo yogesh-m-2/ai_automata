@@ -46,6 +46,7 @@ class Chat:
 
     def prompt(self, query, copy_json=False):
         self.driver.get("https://www.chatgpt.com")
+        print("here")
         try:
             input_element = WebDriverWait(self.driver, 20).until(
                 EC.visibility_of_element_located((By.XPATH, "//p[@data-placeholder='Ask anything']"))

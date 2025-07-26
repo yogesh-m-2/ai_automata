@@ -13,8 +13,6 @@ import configparser
 from email.mime.text import MIMEText
 from datetime import datetime
 
-from test import app_password
-
 logging.basicConfig(filename='error.log', level=logging.ERROR,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -39,13 +37,13 @@ def extract_json_from_string(input_data):
 def daily_task():
     gpt = Chat(kill_chrome=True)
     res = gpt.prompt("""can you tell me todays news relevant to people living in Karnataka. give output in the below way
-    [{
-    
-    "headline":""
-    "description":""(keep description in max 7 lines)
-    "hashtag_word":""(give 1 word which i can use in other websites to extract relevant hashtags)
-    
-    }, so on ] make sure i am able to copy it""".replace("\n",""),copy_json=True)
+[{
+
+"headline":""
+"description":""(keep description in max 7 lines)
+"hashtag_word":""(give 1 word which i can use in other websites to extract relevant hashtags)
+
+}, so on ] make sure i am able to copy it""".replace("\n",""),copy_json=True)
 
 
     result = extract_json_from_string(res)
@@ -62,8 +60,8 @@ def daily_task():
             config_path = os.path.join(os.path.dirname(__file__), 'config.ini')
             config = configparser.ConfigParser()
             config.read(config_path)
-            sender = config['SELENIUM']['msg_sender']
-            receiver = config['SELENIUM']['msg_receiver']
+            sender = config['SELENIUM']['msg_from']
+            receiver = config['SELENIUM']['msg_to']
             app_password = config['SELENIUM']['app_password']
 
             msg = MIMEText(str(e))
@@ -90,5 +88,5 @@ while True:
     if now.hour == 0 and now.minute == 0:
         has_run_today = False
 
-    time.sleep(300)
+    time.sleep(1)
 
